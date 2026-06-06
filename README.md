@@ -4,6 +4,7 @@
 **Materia:** Seguridad de Redes  
 **Fecha:** 31/05/2026  
 
+[Ver demostración en YouTube](https://youtu.be/6rrXwX1fIoo)
 ---
 
 ## Objetivo del Laboratorio
@@ -59,7 +60,8 @@ como Root, causando inestabilidad y redirección de tráfico.
 ## Documentación de la Red
 
 ### Topología
-> 📸 **[INSERTAR CAPTURA DE LA TOPOLOGÍA EN EVE-NG]**
+> <img width="705" height="617" alt="image" src="https://github.com/user-attachments/assets/ff1b78ac-0b54-4dd3-88d8-00accf6adcda" />
+
 
 ### Direccionamiento IP
 | Dispositivo | Interfaz | Dirección IP | Máscara | Rol |
@@ -92,20 +94,21 @@ como Root, causando inestabilidad y redirección de tráfico.
 
 ## Capturas de Pantalla
 
-### Topología del laboratorio
-> 📸 **[INSERTAR CAPTURA DE LA TOPOLOGÍA]**
-
 ### SW1 como Root Bridge antes del ataque
-> 📸 **[INSERTAR CAPTURA DE: show spanning-tree vlan 1 en SW1 con "This bridge is the root"]**
+> <img width="959" height="619" alt="image" src="https://github.com/user-attachments/assets/c38a6a16-3695-4c6d-b676-f3635a10726c" />
+
 
 ### Ejecución del script
-> 📸 **[INSERTAR CAPTURA DEL SCRIPT CORRIENDO EN KALI]**
+> <img width="482" height="377" alt="image" src="https://github.com/user-attachments/assets/eed508f7-7e21-4b29-972b-d393940011a9" />
+
 
 ### SW1 pierde el rol de Root Bridge
-> 📸 **[INSERTAR CAPTURA DE: show spanning-tree vlan 1 en SW1 sin "This bridge is the root"]**
+> <img width="975" height="400" alt="image" src="https://github.com/user-attachments/assets/02aac594-167c-4158-849d-d0c26ae2eaed" />
+
 
 ### Kali como nuevo Root Bridge
-> 📸 **[INSERTAR CAPTURA DE: show spanning-tree vlan 1 en SW1 mostrando MAC de Kali como Root]**
+> <img width="975" height="286" alt="image" src="https://github.com/user-attachments/assets/7a4bb0b9-53f9-4423-a928-4ca64f4d09d6" />
+
 
 ---
 
@@ -126,11 +129,10 @@ interface ethernet 0/3
 ```
 
 ### Verificación
-> 📸 **[INSERTAR CAPTURA DE: show spanning-tree inconsistentports en SW1]**
+> <img width="878" height="148" alt="image" src="https://github.com/user-attachments/assets/dcc3dd32-9a17-40f1-afb7-ce0a382e21f4" />
+
 
 ### Resultado
 BPDU Guard deshabilita automáticamente cualquier puerto que 
 reciba BPDUs no autorizados. Root Guard evita que puertos 
 específicos acepten un Root Bridge superior al configurado.
-
-> 📸 **[INSERTAR CAPTURA DEL SCRIPT CORRIENDO CON CONTRAMEDIDA ACTIVA]**
